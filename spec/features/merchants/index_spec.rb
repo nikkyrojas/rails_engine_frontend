@@ -1,12 +1,13 @@
-require "rails_helper"
+# frozen_string_literal: true
 
-RSpec.describe "Merchant index page" do
-  it "displays a list of merchants" do
-   
-    visit "/merchants"
-    expect(page).to have_link("Schroeder-Jerde")
-    expect(page).to have_link("Hand-Spencer")
-    expect(page).to have_link("Hickle-Hessel")
+require 'rails_helper'
+
+RSpec.describe 'Merchant index page' do
+  it 'displays a list of merchants' do
+    visit '/merchants'
+    expect(page).to have_link('Schroeder-Jerde')
+    expect(page).to have_link('Hand-Spencer')
+    expect(page).to have_link('Hickle-Hessel')
   end
 end
 
