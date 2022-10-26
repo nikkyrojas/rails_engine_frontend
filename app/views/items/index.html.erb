@@ -1,0 +1,5 @@
+<center><h1 style="color:green;">All Items</h1><center>
+<% @items.each do |item| %>
+<p><%= link_to "#{item.name}", "/items/#{item.id}", method: :get %></p>
+<% end %>
+

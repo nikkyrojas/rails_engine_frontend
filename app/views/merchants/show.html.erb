@@ -3,6 +3,6 @@
 <h2 style="color:red;">Items:</h2>
 <% @items.each do |item| %>
  <div id="merchant_items">
-   <h4  style="color:green;"><%= item.name %></h4>
+   <h4  style="color:green;"> <%= link_to item.name, "/items/#{item.id}", method: :get %></h4>
   </div>
 <% end %>

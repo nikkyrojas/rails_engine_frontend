@@ -1,0 +1,10 @@
+<center> <h1 style="color:orange;"><%= @item.name %></h1> </center>
+
+<h2 style="color:red;">Item's Details:</h2>
+ <div id="item">
+   <h4  style="color:green;">Name: <%= @item.name %></h4>
+   <h4  style="color:green;">Unit Price: <%= @item.unit_price %></h4>
+   <h4  style="color:green;">Description: <%= @item.description %></h4>
+
+   <h4  style="color:green;">Merchant: <%= link_to "#{@merchant.name}", "/merchants/#{@merchant.id}", method: :get %></h4>
+  </div>
