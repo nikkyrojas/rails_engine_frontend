@@ -14,8 +14,4 @@ class ItemService
     parsed = JSON.parse(response.body, symbolize_names: true)[:data]
   end
 
-  def self.get_item_merchant(id)
-    response = conn.get("/api/v1/merchants/#{id}/items")
-    parsed = JSON.parse(response.body, symbolize_names: true)[:data]
-  end
 end
