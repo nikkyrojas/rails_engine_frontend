@@ -13,5 +13,4 @@ class ItemService
     response = conn.get("/api/v1/items/#{id}")
     parsed = JSON.parse(response.body, symbolize_names: true)[:data]
   end
-
 end
